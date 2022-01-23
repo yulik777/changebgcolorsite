@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container{
+            display: flex;
+            flex-direction: column;
+        }
+        body{background-color: rgb(230, 220, 240);}
+    </style>
+
+<div id="container">
+    <p> <b>Change color</b></p>
+    <select name="sitecolor" id="color" onchange="show()">  
+        <option value="pink">pink</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+        <option value="grey">grey</option>
+        <option value="violet">violet</option>
+    </select> 
+    <img src="" id="sitecolor" width="90%">
+
+    <h1 id="name"> My Website</h1>
+</div>
+    <script>
+        function show(){
+            switch(document.getElementById('color').value)
+           { case "pink":  
+           document.body.style.backgroundColor="pink" ;break;
+             case "green": 
+             document.body.style.backgroundColor="green" ;break;
+             case "yellow":  
+           document.body.style.backgroundColor="yellow" ;break;
+             case "blue": 
+             document.body.style.backgroundColor="blue" ;break;
+             case "grey": 
+             document.body.style.backgroundColor="grey" ;break;
+             case "violet": 
+             document.body.style.backgroundColor="violet" ;break;
+        }}
+    </script>
+   
+</body>
+</html>
